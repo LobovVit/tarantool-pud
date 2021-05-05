@@ -36,9 +36,12 @@ local ok, err = cartridge.cfg({
         'cartridge.roles.vshard-storage',
         'cartridge.roles.vshard-router',
         'cartridge.roles.metrics',
-        'app.roles.custom',
+        'app.roles.services',
+        'app.roles.storage_doc',
     },
     cluster_cookie = 'tarantool-pud-cluster-cookie',
+    vshard_groups = {'hot', 'cold'},
+    bucket_count  = 1000
 })
 
 assert(ok, tostring(err))

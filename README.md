@@ -27,7 +27,7 @@ It configures package search path to correctly start application on production
 
 ## Roles
 
-Application has one simple role, [`app.roles.custom`](./app/roles/custom.lua).
+Application has one simple role, [`app.roles.custom`](app/roles/services.lua).
 It exposes `/hello` and `/metrics` endpoints:
 
 ```bash
